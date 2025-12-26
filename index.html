@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maddy Heyer | Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-accent"></div>
+  <header class="site-header">
+    <div class="logo">MH</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#talking-resume">Talking Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Computer Science & Engineering @ Michigan</p>
+        <h1>Maddy Heyer — building resilient systems and thoughtful AI experiences.</h1>
+        <p class="lede">Master's student focusing on distributed systems, applied AI, and the craft of clean, testable
+          code. I like turning complex ideas into elegant, reliable software.</p>
+        <div class="hero__actions">
+          <a class="button primary" href="#projects">View work</a>
+          <a class="button ghost" href="#talking-resume">Talking resume</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <span class="meta-label">Location</span>
+            <span>Ann Arbor, MI</span>
+          </div>
+          <div>
+            <span class="meta-label">Focus</span>
+            <span>Systems, AI/ML, product engineering</span>
+          </div>
+          <div>
+            <span class="meta-label">Open to</span>
+            <span>Internships & new grad roles</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="card">
+          <p class="card__title">In progress</p>
+          <p class="card__headline">A portfolio designed to grow with new projects and an AI-powered resume chat.</p>
+          <ul class="list">
+            <li>Lightweight static site (no build step required)</li>
+            <li>Projects section ready for quick additions</li>
+            <li>Placeholder for your talking resume embed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section__header">
+        <p class="eyebrow">About</p>
+        <h2>Engineer with a systems mindset and a product lens.</h2>
+      </div>
+      <p class="body-text">I enjoy designing services that are reliable, observable, and built for humans to maintain.
+        My recent interests include agentic AI workflows, efficient data pipelines, and practical DevOps. When I'm not
+        coding, I mentor peers, sketch product ideas, and explore how AI can make everyday tools feel more personal.</p>
+    </section>
+
+    <section id="skills" class="section section--grid">
+      <div class="section__header">
+        <p class="eyebrow">Skills</p>
+        <h2>What I bring to a team.</h2>
+      </div>
+      <div class="pill-grid">
+        <div class="pill">Python</div>
+        <div class="pill">TypeScript / JavaScript</div>
+        <div class="pill">Go</div>
+        <div class="pill">Node.js</div>
+        <div class="pill">React</div>
+        <div class="pill">PostgreSQL</div>
+        <div class="pill">Distributed systems</div>
+        <div class="pill">APIs & microservices</div>
+        <div class="pill">Observability</div>
+        <div class="pill">Testing strategy</div>
+        <div class="pill">Prompt engineering</div>
+        <div class="pill">MLOps basics</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--cards">
+      <div class="section__header">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work and prototypes.</h2>
+        <p class="hint">Add new projects by duplicating a card in this section. Keep links, stack, and impact concise.
+        </p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <p class="card__title">AI Talking Resume (placeholder)</p>
+          <p class="card__headline">Agentic chatbot that answers questions using my resume and portfolio content.</p>
+          <ul class="list">
+            <li>Built retrieval and prompt strategy to keep responses factual</li>
+            <li>Experimented with UX for "ask me anything" flows</li>
+            <li>Future: embed live demo below</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Retrieval</span>
+          </div>
+        </article>
+        <article class="card">
+          <p class="card__title">System design notes</p>
+          <p class="card__headline">Compact write-ups on consistency, caching, and scaling patterns.</p>
+          <ul class="list">
+            <li>Translated course concepts into applied scenarios</li>
+            <li>Includes diagrams and tradeoff discussions</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Distributed systems</span>
+            <span class="tag">Architecture</span>
+          </div>
+        </article>
+        <article class="card card--muted">
+          <p class="card__title">Next slot reserved</p>
+          <p class="card__headline">Plug in your next project here — research, hackathon, or coursework.</p>
+          <p class="muted-text">Swap this card with a new write-up to keep the page fresh.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="talking-resume" class="section section--accent">
+      <div class="section__header">
+        <p class="eyebrow">Talking Resume</p>
+        <h2>Chat with my experience.</h2>
+        <p class="hint">This placeholder will host the AI embed. Add your iframe or script where noted.</p>
+      </div>
+      <div class="talking-resume">
+        <div class="placeholder">
+          <p class="placeholder__label">Embed coming soon</p>
+          <p class="placeholder__text">Drop in your chatbot iframe or a custom component to let recruiters ask questions
+            about your background.</p>
+          <code class="placeholder__code">&lt;!-- TODO: insert talking resume embed here --&gt;</code>
+          <button class="button secondary" type="button" onclick="scrollToContact()">Get in touch</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk about internships and new grad roles.</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p class="body-text">Email is best for detailed questions; LinkedIn and GitHub are great for quick
+            introductions and project deep dives.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:mmheyer@umich.edu">mmheyer@umich.edu</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/madison-heyer-910237220/" target="_blank"
+            rel="noreferrer">LinkedIn</a>
+          <a class="contact-link" href="https://github.com/mmheyer" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built to grow with every project. Last updated 2024.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
