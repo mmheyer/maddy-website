@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madison Heyer | Networked Personal Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
   <header class="topbar">
     <div class="topbar__brand">Madison Heyer</div>
     <nav class="topbar__nav">
@@ -24,8 +29,12 @@
   </header>
 
   <main class="page">
-    <section id="hero" class="panel panel--hero">
+    <section id="hero" class="panel panel--hero is-visible">
       <div class="packet-label">Layer 1 • Frame Header</div>
+      <div class="hero-lights" aria-hidden="true">
+        <span class="hero-light hero-light--cyan"></span>
+        <span class="hero-light hero-light--amber"></span>
+      </div>
       <div class="hero__content">
         <div>
           <p class="eyebrow">M.S.E. Computer Science @ University of Michigan • Networked Systems & AI</p>
@@ -34,23 +43,59 @@
             I build resilient, human-centered software and teach computer networks. I love translating complex systems
             into clear, maintainable code with thoughtful performance and testing.
           </p>
-          <div class="cta-row">
-            <a class="btn btn--primary" href="Madison Heyer Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-            <a class="btn btn--ghost" href="mailto:mmheyer@umich.edu">mmheyer@umich.edu</a>
-            <a class="btn btn--ghost" href="https://www.linkedin.com/in/madison-heyer-910237220/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="hero__meta-row">
+            <div class="live-pill"><span class="live-pill__dot"></span>Open to full-time</div>
+            <div class="meta-chip">Systems</div>
+            <div class="meta-chip">AI/ML</div>
           </div>
+          <div class="cta-row">
+            <a class="btn btn--primary btn--shine" href="Madison Heyer Resume.pdf" target="_blank"
+              rel="noreferrer">Download Resume</a>
+            <a class="btn btn--primary btn--ghostline" href="#projects">See Projects</a>
+            <a class="btn btn--ghost" href="mailto:mmheyer@umich.edu">mmheyer@umich.edu</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/madison-heyer-910237220/" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+            <a class="btn btn--ghost" href="https://github.com/mmheyer" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <!-- <div class="hero__signals">
+            <div class="signal">
+              <span class="signal__bar"></span>
+              <span>Teaching TCP/IP and debugging C/C++ with 100+ students weekly.</span>
+            </div>
+            <div class="signal">
+              <span class="signal__bar"></span>
+              <span>Designing scheduling systems and analytics that ship cleanly.</span>
+            </div>
+            <div class="signal">
+              <span class="signal__bar"></span>
+              <span>Shipping AI-infused experiences with performance guardrails.</span>
+            </div>
+          </div> -->
         </div>
         <div class="hero__packet">
           <div class="packet-chip">Encapsulation Path</div>
           <ol class="encapsulation">
-            <li><span>Physical</span><strong>Identity</strong></li>
-            <li><span>Data Link</span><strong>Education</strong></li>
-            <li><span>Network</span><strong>Experience</strong></li>
-            <li><span>Transport</span><strong>Projects</strong></li>
-            <li><span>Application</span><strong>Skills</strong></li>
-            <li><span>Terminal</span><strong>Contact + AI</strong></li>
+            <li><a href="#hero"><span>Physical</span><strong>Identity</strong></a></li>
+            <li><a href="#education"><span>Data Link</span><strong>Education</strong></a></li>
+            <li><a href="#experience"><span>Network</span><strong>Experience</strong></a></li>
+            <li><a href="#projects"><span>Transport</span><strong>Projects</strong></a></li>
+            <li><a href="#skills"><span>Application</span><strong>Skills</strong></a></li>
+            <li><a href="#contact"><span>Terminal</span><strong>Contact + AI</strong></a></li>
           </ol>
           <div class="packet-note">Think of each section as a packet layer—stacked, routed, and ready to deliver.</div>
+          <div class="signal-meter">
+            <div class="signal-meter__bar"></div>
+            <div class="signal-meter__bar signal-meter__bar--mid"></div>
+            <div class="signal-meter__bar signal-meter__bar--low"></div>
+            <div class="signal-meter__pulse"></div>
+          </div>
+          <!-- <div class="hero__badge">Latency-aware • Human-centered • Impact-ready</div> -->
+        </div>
+      </div>
+      <div class="hero__ticker" aria-hidden="true">
+        <div class="hero__ticker-track">
+          <span>Networked thinker → Reliable systems → Teaching-first leadership → AI with guardrails →</span>
+          <span>Networked thinker → Reliable systems → Teaching-first leadership → AI with guardrails →</span>
         </div>
       </div>
     </section>
@@ -72,7 +117,8 @@
             Coursework: Machine Learning, Human-Centered Design, Computer Architecture, Web Systems, Databases,
             Computer Networks, Software Engineering, Computer Vision, Data Science, Statistical Computing.
           </p>
-          <p class="block__tags">Honors: Engineering Honors Program, Summa Cum Laude, Leinweber Software Scholarship.</p>
+          <p class="block__tags">Honors: Engineering Honors Program, Summa Cum Laude, Leinweber Software Scholarship.
+          </p>
         </div>
       </div>
     </section>
@@ -89,9 +135,12 @@
             <div class="card__badge">Source: Academia</div>
           </header>
           <ul class="card__list">
-            <li>Lead weekly labs and office hours for 100+ students on sockets, reliable transfer, and congestion control in C/C++.</li>
-            <li>Review and debug codebases, reinforcing performance analysis and test-driven development for network programs.</li>
-            <li>Create supplemental material on TCP flow control, packet loss recovery, and throughput optimization.</li>
+            <li>Lead weekly labs and office hours for 100+ students on sockets, reliable transfer, and congestion
+              control in C/C++.</li>
+            <li>Review and debug codebases, reinforcing performance analysis and test-driven development for network
+              programs.</li>
+            <li>Create supplemental material on TCP flow control, packet loss recovery, and throughput optimization.
+            </li>
           </ul>
         </article>
 
@@ -99,14 +148,17 @@
           <header class="card__header">
             <div>
               <div class="card__title">Software Engineer</div>
-              <div class="card__meta">Center for Healthcare Research and Patient Safety (CHEPS) · May 2023 – Present · Ann Arbor, MI</div>
+              <div class="card__meta">Center for Healthcare Research and Patient Safety (CHEPS) · May 2023 – Present ·
+                Ann Arbor, MI</div>
             </div>
             <div class="card__badge">Payload Integrity</div>
           </header>
           <ul class="card__list">
-            <li>Implemented a staffing tool with a robust backend to speed scheduling for 100+ Michigan hospital staff.</li>
+            <li>Implemented a staffing tool with a robust backend to speed scheduling for 100+ Michigan hospital staff.
+            </li>
             <li>Built a C++ optimization library that improved scheduling accuracy and resource allocation.</li>
-            <li>Established coding standards and unit testing guidelines to keep the project consistent and maintainable.</li>
+            <li>Established coding standards and unit testing guidelines to keep the project consistent and
+              maintainable.</li>
           </ul>
         </article>
 
@@ -119,7 +171,8 @@
             <div class="card__badge">Edge Device</div>
           </header>
           <ul class="card__list">
-            <li>Developed and optimized C++/Python AI-powered embedded systems to improve energy management for sustainable IoT devices.</li>
+            <li>Developed and optimized C++/Python AI-powered embedded systems to improve energy management for
+              sustainable IoT devices.</li>
             <li>Contributed to full-stack web and mobile improvements, enhancing UX and backend infrastructure.</li>
             <li>Researched AI, IoT, and smart energy tech to inform future product direction.</li>
           </ul>
@@ -134,8 +187,10 @@
             <div class="card__badge">Signal Analysis</div>
           </header>
           <ul class="card__list">
-            <li>Designed ETL pipelines and dashboards in Python to visualize assembly line cycle times and uncover trends.</li>
-            <li>Built ARIMA/LSTM forecasting and dashboards to surface operational insights aligned to business needs.</li>
+            <li>Designed ETL pipelines and dashboards in Python to visualize assembly line cycle times and uncover
+              trends.</li>
+            <li>Built ARIMA/LSTM forecasting and dashboards to surface operational insights aligned to business needs.
+            </li>
             <li>Partnered with cross-functional teams to turn requirements into deployable analytics solutions.</li>
           </ul>
         </article>
@@ -154,9 +209,11 @@
             <div class="card__badge">Flow Control</div>
           </header>
           <ul class="card__list">
-            <li>Built a Chrome extension that integrates with the University of Michigan lecture capture system to help students revisit and summarize content.</li>
+            <li>Built a Chrome extension that integrates with the University of Michigan lecture capture system to help
+              students revisit and summarize content.</li>
             <li>Implemented OpenAI-powered content scripts to extract accurate lecture summaries for review.</li>
-            <li>Designed friendly UI components with JavaScript, HTML, and CSS featuring dynamic controls and interactive pop-ups.</li>
+            <li>Designed friendly UI components with JavaScript, HTML, and CSS featuring dynamic controls and
+              interactive pop-ups.</li>
           </ul>
         </article>
       </div>
@@ -171,7 +228,8 @@
         </div>
         <div class="skill-block">
           <div class="skill-label">Frameworks & Libraries</div>
-          <p>React, Flask, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Hadoop/MapReduce, Beautiful Soup, Requests, OpenCV.</p>
+          <p>React, Flask, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Hadoop/MapReduce,
+            Beautiful Soup, Requests, OpenCV.</p>
         </div>
         <div class="skill-block">
           <div class="skill-label">Tools & Cloud</div>
@@ -186,26 +244,31 @@
         <div class="contact-card">
           <div class="card__title">Signal Check</div>
           <p class="lede">
-            Let’s chat about networks, systems, and building reliable experiences. I’m open to full-time software roles with a
+            Let’s chat about networks, systems, and building reliable experiences. I’m open to full-time software roles
+            with a
             focus on distributed systems, infrastructure, or applied AI.
           </p>
           <div class="contact-links">
             <a href="mailto:mmheyer@umich.edu" class="contact-link">mmheyer@umich.edu</a>
             <a href="tel:+17345127371" class="contact-link">(734) 512-7371</a>
-            <a href="https://github.com/mmheyer" target="_blank" rel="noreferrer" class="contact-link">github.com/mmheyer</a>
-            <a href="https://www.linkedin.com/in/madison-heyer-910237220/" target="_blank" rel="noreferrer" class="contact-link">linkedin.com/in/madison-heyer-910237220</a>
+            <a href="https://github.com/mmheyer" target="_blank" rel="noreferrer"
+              class="contact-link">github.com/mmheyer</a>
+            <a href="https://www.linkedin.com/in/madison-heyer-910237220/" target="_blank" rel="noreferrer"
+              class="contact-link">linkedin.com/in/madison-heyer-910237220</a>
           </div>
         </div>
         <div class="contact-card contact-card--ai">
           <div class="card__title">Talking Resume · Coming Soon</div>
           <p class="block__body">
-            I’m building an agentic chatbot so you can query my experience, projects, and skills. The embed will live here.
+            I’m building an agentic chatbot so you can query my experience, projects, and skills. The embed will live
+            here.
           </p>
           <button class="btn btn--primary" id="open-placeholder">Preview placeholder</button>
           <div class="ai-placeholder" id="ai-placeholder" hidden>
             <div class="ai-placeholder__header">Packet Inspection</div>
             <p class="ai-placeholder__text">
-              This is where the Talking Resume will load. Ask about networking labs, scheduling optimizations, or embedded
+              This is where the Talking Resume will load. Ask about networking labs, scheduling optimizations, or
+              embedded
               AI — the agent will route you to the right details.
             </p>
             <p class="ai-placeholder__hint">Hook up your embed script or iframe here when ready.</p>
@@ -222,4 +285,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
