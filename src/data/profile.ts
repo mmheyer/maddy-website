@@ -6,14 +6,14 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/madison-heyer-910237220/',
   github: 'https://github.com/mmheyer',
   bio: [
-    "I'm a Master's student in Computer Science and Engineering at the University of Michigan with experience in systems optimization, AI-driven applications, and large-scale data analysis.",
+    "I recently graduated with my Master's degree in Computer Science and Engineering from the University of Michigan. I have experience in systems optimization, AI-driven applications, and large-scale data analysis.",
     "I've contributed to open-source software and built performance-critical compiler optimizations, achieving 95–98% runtime improvements. I'm passionate about building efficient, reliable, and user-focused software systems.",
   ],
   education: [
     {
       degree: 'M.S.E in Computer Science and Engineering',
       school: 'University of Michigan',
-      dates: 'Aug 2025 – May 2026 (Expected)',
+      dates: 'Aug 2025 – May 2026',
       coursework:
         'Compilers, AI, Advanced Scalable Systems, Human-Computer Interaction',
     },
