@@ -13,7 +13,7 @@ export default function About() {
         {/* Headshot */}
         <div className="flex justify-center md:justify-start">
           <img
-            src={import.meta.env.BASE_URL + 'headshot.jpg'}
+            src={import.meta.env.BASE_URL + 'headshot.jpeg'}
             alt="Madison Heyer"
             className="h-64 w-64 rounded-2xl object-cover object-[60%_top] shadow-md"
           />

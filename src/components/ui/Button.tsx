@@ -15,7 +15,7 @@ export default function Button({
     'inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300';
   const variants = {
     primary:
-      'bg-accent-blue text-white hover:bg-accent-blue/90 hover:shadow-lg hover:-translate-y-0.5',
+      'bg-accent-blue text-white hover:bg-accent-blue/90 hover:shadow-[0_8px_30px_rgba(59,130,246,0.35)] hover:-translate-y-0.5',
     secondary:
       'border-2 border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white hover:-translate-y-0.5',
   };
