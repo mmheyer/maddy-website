@@ -7,6 +7,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Orbit: Routing Requests Toward Cache Locality in KVCache-Centric LLM Serving',
+    type: 'Distributed Systems',
+    description:
+      'Built a cache-aware router for distributed LLM serving that directs requests toward clusters likely to have their prompt prefix cached, using approximate cache summaries (Bloom filters and hotset tracking) to cut median time-to-first-token from 3.2s to 0.6s over load-based routing.',
+    tech: ['LLM Inference', 'Bloom Filters', 'Performance Benchmarking', 'ML Infrastructure'],
+  },
+  {
     title: 'ShedSkin: Python-to-C++ Transpiler Optimization',
     type: 'Compilers',
     description:
